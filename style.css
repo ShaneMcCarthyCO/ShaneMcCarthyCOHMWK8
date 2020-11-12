@@ -2,43 +2,44 @@
   box-sizing: border-box;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-
-body {
-  overflow-x: hidden;
-  background-image; url
-}
-
+/* Used to format nav for all three HLML files */
 nav {
   font-size: 24px;
-  background-color: #d9dcd6;
+  background-color: #0796f6;
   height: 24;
 }
-
-section h1{
+/* Specific font for About Me */
+section h1 {
   font-size: 50px;
+  text-align: center;
 }
-
-section p{
+/* used to style paragragh in About Me */
+section p {
   font-size: 25px;
-  margin: 150px;
+  float: left;
+  margin 150px;
+  
 }
 
 .card-img-top {
   width: 600px;
-  float: left;
-  font-size: 25px;
+  font-size: 55px;
   padding: 25px;
-  
-  
+  float: right;
 }
 
-#AboutMe {
-  font-size: 50px;
+/* using to size pictures consistently */
+.img-fluid {
+  max-width: 100%;
+  height: 400px;
+  width: 400px;
+  margin: 100px;
 }
 
+/* highlight my name in top left */
 .navbar-brand {
   font-size: 35px;
-  background-color: #d9dcd6;
+  background-color: #0cacf7;
   padding: 30px;
 }
 
@@ -46,18 +47,34 @@ header {
   padding: 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  background-color: #2a607c;
-  color: #ffffff;
+  background-color: #4c9b87;
+  color: #c33e3e;
+}
+
+.card {
+  margin-top: 50px;
+  margin-left: 600px;
+  font-size: medium;
 }
 
 footer {
   margin-top: 50px;
-  padding: 40px;
-  background-color: cornflowerblue;
+  padding: 20px;
+  background-color: rgb(154, 161, 161);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   text-align: center;
   text-emphasis: bold;
   font-size: 30px;
-  clear: both; 
+  clear: both;
+}
+/* media query, resize the screen if needed */
+@media screen and (max-width: 768px) {
+  body {
+    background-color: black;
+  }
+
+  .wrapper {
+    width: 600 px;
+  }
 }

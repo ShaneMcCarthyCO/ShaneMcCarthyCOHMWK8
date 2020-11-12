@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+    <!-- Including meta tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Home</title>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
-    <link
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Referencing CSS file for aesthetics -->
     <link
     rel="stylesheet" href="style.css">
   </head>
-  
+  <!-- Using same NAVBAR across all three HTML files -->
   <body>
     <nav class="navbar navbar-expand-sm-md-lg-xl navbar-light bg-light">
       <a class="navbar-brand" href="#">Shane McCarthy</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
-          <span class="navbar-toggler-icon"</span>
+          <span class="navbar-toggler-icon"/span>
         </button>
+        <!-- linking to other HTML files -->
         <div class="collapse navbar-collapse" id="navbarMenu">
-          <ul class="navbar-nav ml-auto">
+          <ul class="nav navbar-nav navbar-right">
             <li class="nav-item active">
-              <a class="nav-link" href="card-title">About Me</a>
+              <a class="nav-link" href="#AboutMe">About Me</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="portfolio.html">Portfolio</a>
@@ -33,22 +32,33 @@
             </li>
           </ul>
         </div>
-    </nav>
-      
+    </nav>      
     <section>
-      <div class="container"
-       id="AboutMe"</div>
-        <h1>About Me</h1>
-              
-        <img src="LinkedIn.jpg" class="card-img-top" alt="" />
-        
+      <div class="container" id="AboutMe">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>About Me</h1>
+        </div>  
+      </div>    
+        <div class="row">
+          <div class="col-md-6">  
+            <img src="LinkedIn.jpg" class="card-img-top" alt="Placeholder">
+            <!-- Shane bio below in paragraph -->
         <p> 
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam labore expedita officia a vel, quod explicabo tempora eius minima esse deserunt velit accusamus, voluptates non nihil maiores. Architecto, a suscipit!
+         I currently reside in Highlands Ranch, CO, with my wife, Katie, and our three children. Please see my LinkedIn profile <a href="https://www.linkedin.com/in/shane-mccarthy-cfa-b49779183/">LinkedIn</a> which shows my professional experience in the financial industry. I am looking to expand my skill set with programming knowledge.  
         </p>
-      </div>
+        </div>
+      </div> 
     </section>
+    <!-- Added jquery, popper & bootstrap script language -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- footer formatted using css file -->
+    <div class="row">
+      <div class="col-md-12"> 
+    <footer> Copyright 2020 </footer>
+    </div>
   </body>
-  <footer>
-    <p>Copyright 2020</p>
-  </footer>
+ 
 </html>
