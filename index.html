@@ -9,17 +9,108 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Referencing CSS file for aesthetics -->
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
+    />    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
     rel="stylesheet" href="style.css">
+    
   </head>
   <!-- Using same NAVBAR across all three HTML files -->
   <body>
-    <nav class="navbar navbar-expand-sm-md-lg-xl navbar-light bg-light">
+    <div class="about-section">
+      <h1>Welcome to My Page | Shane McCarthy</h1>
+      <p>I am glad you are here to visit my website.</p>
+      <p>Below you will see more information about me, including previous work completed, my resume, and previous work I have completed.</p>
+    </div>
+    <!-- <h2 style="text-align:center">About Me</h2> -->
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="Headshot.png" alt="Shane" style="width:100%">
+      <div class="container">
+        <h2>Shane McCarthy</h2>
+        <p class="title">Web Developer | Experienced Financial Professional</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>shanepmccarthy@icloud.com</p>
+      </div>
+    </div>
+  </div> 
+  <div class="test">
+    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+    </div> 
+</div>
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h3 class="white-text">Contact Information</h3>
+          <p class="grey-text text-lighten-4">Below are my contact details. Please feel free to reach out.</p>
+          <i class="material-icons">contact_mail</i>
+          <div class="vcard">
+            <div class="mailing-address" itemscope="" itemtype="http://schema.org/Place">
+                <div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+                <p class="adr">
+                <span itemprop="streetAddress" class="street-address">
+                10795 Lismore Way
+                </span>
+                
+                <span><span itemprop="addressLocality">Highlands Ranch</span>, <span itemprop="addressRegion" class="region">CO</span>
+                <span itemprop="postalCode" class="postal-code">80126    </span>
+                </span>
+                </p>
+                </div>
+                </div>
+          </div>
+          
+          <i class="material-icons">contact_phone</i>
+          <p><span itemprop="telephone" class="tel">
+            720.385.9585</span>
+            </p>
+            
+          <i class="material-icons">email</i>
+          <p><span itemprop="email" class="email">
+            shanepmccarthy@icloud.com</span>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h3 class="white-text">Links</h3>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/shane-mccarthy-cfa-b49779183/" target="blank">LinkedIn</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://github.com/ShaneMcCarthyCO/ShaneMcCarthyCOHMWK6" target="blank">Weather Dashboard</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://github.com/ShaneMcCarthyCO/ShaneMcCarthyCOHMWK4" target="blank">Password Generator</a></li>
+            <li><a class="grey-text text-lighten-3" href= "SMResume.pdf" target="blank">Resume</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+ 
+  </footer>
+</body>
+     
+  
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"
+  ></script>
+  <script src="./script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+</html>
+
+ <!-- <nav class="navbar navbar-expand-sm-md-lg-xl navbar-light bg-light">
       <a class="navbar-brand" href="#">Shane McCarthy</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
           <span class="navbar-toggler-icon"/span>
         </button>
-        <!-- linking to other HTML files -->
-        <div class="collapse navbar-collapse" id="navbarMenu">
+         linking to other HTML files -->
+        <!-- <div class="collapse navbar-collapse" id="navbarMenu">
           <ul class="nav navbar-nav navbar-right">
             <li class="nav-item active">
               <a class="nav-link" href="#AboutMe">About Me</a>
@@ -31,34 +122,20 @@
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
-        </div>
-    </nav>      
-    <section>
-      <div class="container" id="AboutMe">
-        <div class="row">
-          <div class="col-md-6">
-            <h1>About Me</h1>
-        </div>  
-      </div>    
-        <div class="row">
-          <div class="col-md-6">  
-            <img src="LinkedIn.jpg" class="card-img-top" alt="Placeholder">
-            <!-- Shane bio below in paragraph -->
-        <p> 
-         I currently reside in Highlands Ranch, CO, with my wife, Katie, and our three children. Please see my LinkedIn profile <a href="https://www.linkedin.com/in/shane-mccarthy-cfa-b49779183/">LinkedIn</a> which shows my professional experience in the financial industry. I am looking to expand my skill set with programming knowledge.  
-        </p>
-        </div>
-      </div> 
-    </section>
-    <!-- Added jquery, popper & bootstrap script language -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <!-- footer formatted using css file -->
-    <div class="row">
+        </div> -->
+    <!-- </nav>       -->     
+
+<!-- footer formatted using css file -->
+    <!-- <div class="row">
       <div class="col-md-12"> 
-    <footer> Copyright 2020 </footer>
-    </div>
-  </body>
- 
-</html>
+        
+    
+        <footer> Copyright 2020 | Shane McCarthy </footer>
+    </div> -->
+
+       <!-- <div class="footer-copyright">
+      <div class="container">
+        Copyright 2020 | Shane McCarthy
+      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div> -->
